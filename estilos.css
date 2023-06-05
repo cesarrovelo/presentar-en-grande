@@ -1,0 +1,438 @@
+:root{
+  --morado: #452189;
+  --verde: #54b4a4;
+  --naranja: #FF5644;
+  --lila: #B083F9;
+  --rosa: #FF93EE;
+
+  --padding-container: 40px 0;
+
+  --font1: 'Unbounded', cursive;
+  --font2: 'Roboto', sans-serif;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font1);
+  font-size: 16px;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: var(--padding-container);
+}
+
+/* NAV */
+
+nav{
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.nav__logo{
+  width: 110px;
+}
+
+.nav__link:first-of-type{
+  margin-left: auto;
+}
+
+.nav__link{
+  text-decoration: none;
+  color: #141414;
+}
+
+.nav__link:hover{
+  color: var(--naranja);
+}
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
+
+/* COVER */
+
+.cover__container{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.cover{
+  background-color: var(--verde);
+  /* background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  padding: 60px; */
+}
+
+.cover__picture{
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 40px;
+  
+}
+
+.cover__img{
+  display: block;
+  max-width: 927px;
+  /* width: 600px; */
+  margin: 0 auto;
+  
+}
+
+/* INTRO */
+
+.intro__container{
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.intro__texts{
+  margin: 0 100px 0 0;
+}
+
+.intro__title{
+  margin-bottom: 24px;
+  line-height: 1.5;
+  color: var(--morado);
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.intro__paragraph{
+  line-height: 1.5;
+  font-family: var(--font2);
+  color: #141414;
+  font-size: 1.125rem;
+}
+
+.intro__img{
+  width: 516px;
+  /* height: 409px; */
+  overflow: hidden;
+}
+
+/* ABOUT */
+
+.about__container{
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.about__texts{
+  margin: 0 100px 0 0;
+}
+
+.about__title{
+  margin-bottom: 24px;
+  line-height: 1.5;
+  color: var(--morado);
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.about__paragraph{
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-family: var(--font2);
+  color: #141414;
+  font-size: 1.125rem;
+}
+
+/* INFO */
+
+.info__container{
+  background-color: var(--rosa);
+  
+}
+
+.info__items{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin: auto 2.5rem;
+}
+
+.info__title{
+  color: var(--morado);
+  font-size: 1.5rem;
+}
+
+.info__text{
+  font-size: 1.25rem;
+}
+
+.info__cta{
+  width: 242px;
+  height: 64px;
+  background-color: var(--morado);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffff;
+}
+
+
+/* GENERAL */
+
+.general__container{
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.general__title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.general__text{
+  color: var(--morado);
+  font-weight: 400;
+}
+
+.general__bullets{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.general__bullet{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 276px;
+}
+
+.general__bullet--img{
+  width: 40px;
+}
+
+.general__bullet--text{
+  padding-top: 2rem;
+  text-align: center;
+}
+
+
+/* CONTENIDO */
+
+.contenido__container{
+  background-color: var(--morado);
+}
+
+.contenido__title{
+  display: flex;
+  margin-bottom: 5rem;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 15%;
+  margin-top: 2rem;
+}
+
+.contenido__icon img{
+  width: 3.5rem;
+}
+
+.contenido__text{
+  color: #ffff;
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+.contenido__modulos{
+  margin: 0 20% 5rem 20%;
+}
+
+.contenido__modulo{
+  display: flex;
+  gap: 2.25rem;
+  margin-bottom: 3rem;
+}
+
+.icono__modulo{
+  width: 2.5rem;
+}
+
+.contenido__modulo--title{
+  font-size: 1.5rem;
+  color: #B083F9;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.contenido__modulo--paragraph{
+  font-family: var(--font2);
+  color: #ffff;
+  font-size: 1rem;
+}
+
+/* GALLERY */
+
+.gallery__container{
+  display: flex;
+  /* gap: 20px; */
+  flex-wrap: wrap;
+  padding-top: 0;
+}
+
+.gallery__picture{
+  flex: 400px;
+}
+
+.gallery__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BENEFICIOS */
+
+.beneficios__container{
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.beneficios__title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.beneficios__text{
+  color: var(--morado);
+  font-weight: 400;
+}
+
+.beneficios__bullets{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+
+.beneficios__bullet{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beneficios__bullet--img{
+  width: 40px;
+}
+
+.beneficios__bullet--text{
+  padding-top: 2rem;
+  text-align: center;
+}
+
+/* SOBRE MI */
+
+.sobremi__container{
+  display: flex;
+  padding-bottom: 0;
+}
+
+.sobremi__texts{
+  background-color: var(--morado);
+  padding: 2.5rem;
+}
+
+.sobremi__title{
+  margin-bottom: 2rem;
+  color: #54b4a4;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.sobremi__paragraph{
+  margin-bottom: 1.7rem;
+  color: rgba(255, 255, 255, .8);
+  font-family: var(--font2);
+  font-size: 1.125rem;
+}
+
+.sobremi__img{
+  display: block;
+}
+
+/* CTA */
+
+.cta__container{
+  padding-top: 0;
+  display: flex;
+}
+
+.cta__texts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--naranja);
+  padding: 2.5rem;
+}
+
+.cta__text{
+  color: #ffff;
+  font-size: 1.8rem;
+}
+.cta__cta{
+width: 242px;
+height: 64px;
+background-color: var(--morado);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+color: #ffff;
+}
+
+.cta__img{
+  display: block;
+}
+
+/* FOOTER */
+
+.footer{
+  background-color: var(--morado);
+}
+
+.footer__container{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__info{
+  padding: 5%;
+  display: flex;
+  gap: 3rem;
+}
+
+.footer__rrss{
+  display: flex;
+  align-items: center;
+  
+}
+
+.footer__rrss a{
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #ffff;
+  line-height: 100%;
+}
